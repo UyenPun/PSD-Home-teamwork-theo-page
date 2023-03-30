@@ -244,7 +244,9 @@ header {
 .help__title button {
   width: 30%;
 }
-.help img {
+.help__img {
+  overflow: hidden;
+  width: 172%;
   -webkit-transform: translateX(-15%);
           transform: translateX(-15%);
 }
