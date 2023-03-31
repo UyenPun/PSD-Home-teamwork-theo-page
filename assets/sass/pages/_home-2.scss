@@ -178,7 +178,9 @@ header {
             width: 30%;
         }
     }
-    img {
+    &__img {
+        overflow: hidden;
+        width: 172%;
         transform: translateX(-15%);
     }
 }
