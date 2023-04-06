@@ -238,6 +238,9 @@ header {
     width: 80%;
     margin: 10rem auto;
     position: relative;
+    img {
+        width: 100%;
+    }
     &__left {
         position: absolute;
         top: 25%;
@@ -260,9 +263,6 @@ header {
             background-color: #44f2a1;
             font-size: 1.6rem;
             font-weight: bold;
-            &:hover {
-                color: #fff;
-            }
         }
     }
     &__right {
@@ -272,8 +272,12 @@ header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
+        justify-items: center;
         gap: 5rem;
         &-items {
+            img {
+                width: 100%;
+            }
         }
     }
 }
@@ -316,7 +320,6 @@ header {
             text-align: center;
             border-radius: 2px;
             display: inline-block;
-            margin: 1rem;
             padding: 10rem;
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
         }
@@ -354,9 +357,6 @@ header {
             color: #1d1741;
             background-color: #00e4fa;
             font-weight: bold;
-            &:hover {
-                color: #fff;
-            }
         }
     }
 }
@@ -454,7 +454,7 @@ ul {
 }
 
 // RESPONSIVE
-// > 1600px
+// < 1600px
 @media only screen and (min-width: 63.9375em) and (max-width: 1600px) {
     //BANNER
     .banner {
@@ -585,6 +585,121 @@ ul {
             }
         }
     }
+
+    // PARTNER
+    .partner {
+        width: 80%;
+        margin: 10rem auto;
+        position: relative;
+        &__left {
+            position: absolute;
+            top: 25%;
+            left: 10%;
+            color: #fff;
+            width: 40%;
+            h2 {
+                margin-bottom: 2rem;
+                width: 70%;
+                font-size: 3rem;
+            }
+            p {
+                width: 70%;
+                font-size: 1.5rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .btn__custom {
+                margin-top: 2rem;
+                font-size: 1.4rem;
+                padding: 1rem 4rem;
+            }
+        }
+        &__right {
+            position: absolute;
+            top: 35%;
+            right: 10%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 4rem;
+            &-items {
+                display: flex;
+                justify-content: flex-end;
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    //EASILY
+    .easily {
+        width: 80%;
+        margin: 10rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &__left {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            button {
+                margin-top: 2rem;
+                font-size: 1.2rem;
+                padding: 1rem 3rem;
+                width: 60%;
+            }
+            h2 {
+                font-size: 3.3rem;
+            }
+            p {
+                margin-top: 2rem;
+                color: #6a727f;
+                font-size: 1.6rem;
+            }
+        }
+        &__right {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: stretch;
+            align-items: stretch;
+
+            gap: 3rem;
+            &-items {
+                background: #fff;
+                text-align: center;
+                border-radius: 2px;
+                display: inline-block;
+                padding: 6rem;
+            }
+            &-skype {
+                position: absolute;
+                top: 20rem;
+                right: 0;
+            }
+        }
+    }
+
+    //BUSINESS
+    .business {
+        &__title {
+            top: 30%;
+            left: 30%;
+            h2 {
+                font-size: 4rem;
+            }
+            p {
+                font-size: 2rem;
+            }
+            button {
+                font-size: 1.3rem;
+                padding: 1rem 3rem;
+            }
+        }
+    }
 }
 
 /* Mobile and Tablet (width < 1024px)*/
@@ -691,6 +806,57 @@ ul {
             }
         }
     }
+
+    //EASILY
+    .easily {
+        width: 80%;
+        margin: 10rem auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        &__left {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            button {
+                margin: 2rem 0;
+                font-size: 1.4rem;
+                padding: 1rem 3rem;
+                width: 30%;
+            }
+            h2 {
+                font-size: 3.3rem;
+            }
+            p {
+                margin-top: 2rem;
+                font-size: 1.4rem;
+            }
+        }
+        &__right {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: stretch;
+            align-items: stretch;
+
+            gap: 3rem;
+            &-items {
+                background: #fff;
+                text-align: center;
+                border-radius: 2px;
+                display: inline-block;
+                padding: 4rem;
+            }
+            &-skype {
+                position: absolute;
+                top: 12rem;
+                right: 0;
+            }
+        }
+    }
 }
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
@@ -746,6 +912,51 @@ ul {
                 margin-top: 1.6rem;
                 font-size: 1.3rem;
                 padding: 1rem 3rem;
+            }
+        }
+    }
+
+    // PARTNER
+    .partner {
+        width: 80%;
+        margin: 10rem auto;
+        position: relative;
+        &__left {
+            display: none;
+        }
+        &__right {
+            position: absolute;
+            top: 28%;
+            right: 23%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 5rem;
+            &-items {
+                display: flex;
+                justify-content: flex-end;
+                img {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    //BUSINESS
+    .business {
+        &__title {
+            top: 35%;
+            left: 30%;
+            h2 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+            button {
+                margin: 2rem;
+                font-size: 1.2rem;
+                padding: 1rem 2rem;
             }
         }
     }
@@ -805,6 +1016,60 @@ ul {
                 margin-top: 1.4rem;
                 font-size: 1.1rem;
                 padding: 1rem 3rem;
+            }
+        }
+    }
+
+    // PARTNER
+    .partner {
+        width: 80%;
+        margin: 10rem auto;
+        position: relative;
+        &__left {
+            display: none;
+        }
+        &__right {
+            position: absolute;
+            top: 20%;
+            right: 15%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 4rem;
+            &-items {
+                display: flex;
+                justify-content: flex-end;
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    //EASILY
+    .easily {
+        &__left {
+            button {
+                width: 50%;
+            }
+        }
+    }
+    
+    //BUSINESS
+    .business {
+        &__title {
+            top: 30%;
+            left: 22%;
+            h2 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+            button {
+                margin: 1rem;
+                font-size: 1rem;
+                padding: .6rem 2rem;
             }
         }
     }
