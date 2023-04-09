@@ -97,7 +97,7 @@ header {
 }
 
 //BANNER
-.banner {
+.banner2 {
     position: relative;
     color: #fff;
     img {
@@ -335,7 +335,7 @@ header {
 }
 
 //BUSINESS
-.business {
+.business2 {
     position: relative;
     img {
         width: 100%;
@@ -457,7 +457,7 @@ ul {
 // < 1600px
 @media only screen and (min-width: 63.9375em) and (max-width: 1600px) {
     //BANNER
-    .banner {
+    .banner2 {
         &__title {
             h2 {
                 font-size: 4rem;
@@ -684,7 +684,7 @@ ul {
     }
 
     //BUSINESS
-    .business {
+    .business2 {
         &__title {
             top: 30%;
             left: 30%;
@@ -861,7 +861,7 @@ ul {
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
     //BANNER
-    .banner {
+    .banner2 {
         &__title {
             h2 {
                 font-size: 3rem;
@@ -943,7 +943,7 @@ ul {
     }
 
     //BUSINESS
-    .business {
+    .business2 {
         &__title {
             top: 35%;
             left: 30%;
@@ -964,7 +964,7 @@ ul {
 /* Mobile: width < 740px */
 @media only screen and (max-width: 46.1875em) {
     //BANNER
-    .banner {
+    .banner2 {
         &__title {
             h2 {
                 font-size: 2rem;
@@ -1056,7 +1056,7 @@ ul {
     }
     
     //BUSINESS
-    .business {
+    .business2 {
         &__title {
             top: 30%;
             left: 22%;
