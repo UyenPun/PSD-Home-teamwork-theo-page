@@ -11,19 +11,29 @@ body {
     background-color: #fff;
     box-shadow: none;
     margin-bottom: 5rem;
-
+    // background-image: url('../../img/page3/banner.png');
     .header-bg {
         width: 100%;
         position: absolute;
         top: 5rem;
         // height: auto;
-        // z-index: 1;
+        z-index: 0;
     }
+    
     // @media screen and (min-width: 739px) {
     //     .header-bg {
     //         background-color: #695fe6;
     // }
     // }
+}
+
+.container {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.row {
+    --bs-gutter-x: 0 !important;
 }
 .navbar {
     position: fixed;
@@ -34,7 +44,6 @@ body {
     background-color: #695fe6;
     z-index: 1000;
     padding: 1rem 0;
-    // width: 100%;
 
     .navbar-brand {
         position: relative;
@@ -69,11 +78,17 @@ body {
             color: #d8d8d8 !important;
         }
     }
+    @media only screen and (max-width: 1024px) {
+        .nav-item.d-block {
+            display: none !important;
+        }
+    }
 }
 
-.banner {
-    z-index: 1;
+.banner3 {
+    position: relative;
     padding-top: 8rem;
+    z-index: 1;
 
     .banner-title {
         color: #fff;
@@ -108,7 +123,60 @@ body {
     }
 }
 
-.main-pay,.worldwide {
+@media only screen and (max-width: 1024px) {
+    
+    .banner-title {
+        left: 6rem;
+    }
+
+    .banner-title h2 {
+        font-size: 4rem !important;
+        letter-spacing: 2px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+        .banner-title h2 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+      }
+
+@media only screen and (max-width: 768px) {
+    .header3 {
+         max-height: 60rem;
+    }
+    .header-bg {
+        height: 55rem;
+    }
+
+    .banner3 {
+        min-height: 20rem;
+        max-height: 30rem;
+        // margin: 1rem 0;
+    }
+
+    .banner-title {
+        left: 3rem;
+        margin-bottom: 4rem;
+
+        h2 {
+            font-size: 2.5rem !important;
+            letter-spacing: 0.5px;
+        }
+
+        button {
+            width: 15rem !important;
+        }
+    }
+    .img-fluid {
+        width: 90%;
+    }
+
+}
+
+.main-pay,
+.worldwide {
     margin-bottom: 3rem;
 
     .pay-img {
@@ -122,7 +190,7 @@ body {
     }
     .pay-title {
         padding: 8rem 3rem;
-        width: 44rem;
+        // width: 44rem;
         text-align: start;
 
         h2 {
@@ -155,23 +223,23 @@ body {
 }
 
 .main-card {
+    position: relative;
     background-color: #fff;
     margin: 15rem auto;
     padding: 0 9rem;
-    position: relative;
 
-    .banner3 {
+    .banner_3 {
         position: absolute;
         top: -15rem;
         left: 0;
-        width:30%;
+        width: 20%;
         z-index: 0;
     }
 
     .main-card-title {
         margin-bottom: 5rem;
         text-align: center;
-        z-index: 1000;
+        
         h2 {
             font-size: 36px;
             font-weight: bold;
@@ -184,10 +252,7 @@ body {
             font-size: 1.6rem;
             line-height: 1.5;
             margin-bottom: 0;
-            z-index: 1000;
-            // margin-left: 15rem;
             color: #6a727f;
-            width: 50rem;
             text-align: center;
         }
     }
@@ -204,7 +269,7 @@ body {
 
     .card:hover {
         background-color: #495be7;
-        
+
         h2 {
             color: #fff;
         }
@@ -222,11 +287,12 @@ body {
         margin-bottom: 2rem;
         height: 35rem;
         text-align: center;
+        margin-right: 1.5rem;
 
-//         .main-card-item:not(:last-child) {
-//         margin-right: 1rem;
-//         width: 90%;
-// }
+        // .main-card-item:not(:last-child) {
+        //     margin-right: 1rem;
+        //     width: 90%;
+        // }
 
         img {
             height: 5rem;
@@ -279,14 +345,12 @@ body {
         img:hover {
             opacity: 0.8;
         }
-
-        
     }
     .touch-text {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
 
         img {
             width: 7rem;
@@ -305,13 +369,13 @@ body {
             font-weight: bold;
             margin: 5rem -10rem;
         }
-
     }
 }
 
 .business {
     position: relative;
-    margin-bottom: 60rem;
+    margin-bottom: 5rem;
+    height: 25rem;
     .business-main {
         position: absolute;
         top: -60rem;
@@ -345,8 +409,8 @@ body {
 
         .business-text {
             color: #393e46;
-            max-width: 50rem;
-            
+            // max-width: 50rem;
+
             img {
                 width: 3rem;
                 margin: 1rem 0;
@@ -381,18 +445,91 @@ body {
             font-size: 3rem;
             font-weight: bold;
             line-height: 1.5;
-            margin: 0 -5rem;
-            // margin-top: 10px;
-            // margin-bottom: 0;
+            margin-left: -5rem;
         }
     }
     .business-down {
-        margin-bottom: 20rem;
         div {
             img {
-            width: 13rem;
+                width: 13rem;
+            }
         }
+    }
+
+    @media (max-width: 739px) {
+        .business-main {
+        position: absolute;
+        top: -30rem;
+    }
+        .business-up {
+            margin-bottom: 0;
+        .business-img {
+            position: relative;
+            margin-bottom: 5rem;
+
+            .banner5 {
+                position: absolute;
+                top: -23.2rem;
+                left: 6rem;
+                width: 54%;
+                z-index: 2;
+                width: 18rem;
+            }
+            .banner6 {
+                position: absolute;
+                top: -15rem;
+                left: 0;
+                z-index: 1;
+                width: 24rem;
+            }
+            .icon4 {
+                position: absolute;
+                top: -19rem;
+                left: -2rem;
+                width: 24rem;
+            }
         }
+
+        .business-text {
+
+            img {
+                width: 2rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+
+            .name {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+        .business-down {
+            img {
+                display: block;
+                width: 9rem !important;
+                padding: 1rem;
+            }
+        }
+        .business-center {
+            h3 {
+                font-size: 5rem;
+                padding: 0 3rem !important;
+            }
+
+            p {
+                font-size: 2rem;
+                padding-left: 3rem !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 739px) {
+    .business {
+        margin-bottom: 8rem !important;
     }
 }
 
@@ -401,7 +538,7 @@ body {
     background-image: url('../../img/page3/background.jpg');
     background-size: cover;
     background-position: center;
-    padding: 20rem 0;
+    padding: 18rem 0;
 
     .contact-text {
         text-align: center;
@@ -418,19 +555,21 @@ body {
         p {
             font-size: 1.4rem;
             margin-bottom: 2rem;
-            padding: 0 35rem;
+            // padding: 0 35rem;
         }
     }
 
     .contact-form {
         padding-top: 2rem;
+        margin: 0 10px;
+
         #email {
             width: 30rem;
             padding: 1em;
             border-radius: 4px;
             border: 2px solid #fff;
             background-color: #7c4be4;
-            margin-right: 1em;
+            margin-right: 5px;
             color: #fff;
             outline-color: #00bfff;
             height: 5rem;
@@ -442,7 +581,7 @@ body {
 
         button {
             height: 5rem;
-            padding: 0 4rem;
+            padding: 0 2rem;
             background-color: #00bfff;
             color: #1d173c;
             border: none;
@@ -481,12 +620,13 @@ body {
             position: absolute;
             top: -28rem;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             width: 10rem;
         }
-        .icon9,.icon10 {
+        .icon9,
+        .icon10 {
             position: absolute;
-            width: 20rem;
+            width: 18rem;
             bottom: -23rem;
             right: 5rem;
         }
@@ -497,7 +637,7 @@ body {
     }
 }
 
-.footer {
+.footer_content {
     background-color: #282f3a;
 
     .footer-title {
@@ -539,11 +679,11 @@ body {
     .contact_us {
         h3 {
             color: #fff;
-            padding: 1.2rem 0 0 5rem;
+            padding: 1.2rem 0 0 3rem;
         }
 
         li {
-            padding: 2rem 0 0 5rem;
+            padding: 2rem 0 0 3rem;
         }
 
         a {
