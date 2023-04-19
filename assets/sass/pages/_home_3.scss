@@ -5,8 +5,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-#app {
-    .header3 {
+#home_3 {
+    .header {
         position: relative;
         height: 90rem;
         background-color: #fff;
@@ -32,6 +32,10 @@ body {
         padding: 0 !important;
         margin: 0 !important;
     }
+
+    // .container-fluid {
+    //     padding-left: 0 !important;
+    // }
 
     .row {
         --bs-gutter-x: 0 !important;
@@ -86,10 +90,11 @@ body {
         }
     }
 
-    .banner3 {
+    .banner {
         position: relative;
         padding-top: 8rem;
         z-index: 1;
+        padding-left: 5px;
 
         .banner-title {
             color: #fff;
@@ -124,56 +129,6 @@ body {
         }
     }
 
-    @media only screen and (max-width: 1024px) {
-        .banner-title {
-            left: 6rem;
-        }
-
-        .banner-title h2 {
-            font-size: 4rem !important;
-            letter-spacing: 2px;
-        }
-    }
-
-    @media (min-width: 740px) and (max-width: 1023px) {
-        .banner-title h2 {
-            font-size: 3rem;
-            letter-spacing: 2px;
-        }
-    }
-
-    @media only screen and (max-width: 768px) {
-        .header3 {
-            max-height: 60rem;
-        }
-        .header-bg {
-            height: 55rem;
-        }
-
-        .banner3 {
-            min-height: 20rem;
-            max-height: 30rem;
-            // margin: 1rem 0;
-        }
-
-        .banner-title {
-            left: 3rem;
-            margin-bottom: 4rem;
-
-            h2 {
-                font-size: 2.5rem !important;
-                letter-spacing: 0.5px;
-            }
-
-            button {
-                width: 15rem !important;
-            }
-        }
-        .img-fluid {
-            width: 90%;
-        }
-    }
-
     .main-pay,
     .worldwide {
         margin-bottom: 3rem;
@@ -184,12 +139,8 @@ body {
                 width: 100%;
             }
         }
-        .text {
-            padding-left: 7rem !important;
-        }
         .pay-title {
-            padding: 8rem 3rem;
-            // width: 44rem;
+            padding: 0 3rem;
             text-align: start;
 
             h2 {
@@ -225,7 +176,7 @@ body {
         position: relative;
         background-color: #fff;
         margin: 15rem auto;
-        padding: 0 9rem;
+        padding: 0 7rem;
 
         .banner_3 {
             position: absolute;
@@ -238,6 +189,7 @@ body {
         .main-card-title {
             margin-bottom: 5rem;
             text-align: center;
+            z-index: 1;
 
             h2 {
                 font-size: 36px;
@@ -328,7 +280,7 @@ body {
             top: -25rem;
             left: 0;
             right: 0;
-            margin: 0 6.8rem;
+            margin: 0 4rem;
         }
 
         .touch-img {
@@ -380,14 +332,14 @@ body {
             top: -60rem;
         }
         .business-up {
-            margin-bottom: 20rem;
+            margin-bottom: 30rem;
             .business-img {
                 position: relative;
 
                 .banner5 {
                     position: absolute;
-                    top: -9.5rem;
-                    left: 10rem;
+                    top: -11rem;
+                    left: 11rem;
                     width: 54%;
                     z-index: 2;
                 }
@@ -453,81 +405,6 @@ body {
                     width: 13rem;
                 }
             }
-        }
-
-        @media (max-width: 739px) {
-            .business-main {
-                position: absolute;
-                top: -30rem;
-            }
-            .business-up {
-                margin-bottom: 0;
-                .business-img {
-                    position: relative;
-                    margin-bottom: 5rem;
-
-                    .banner5 {
-                        position: absolute;
-                        top: -23.2rem;
-                        left: 6rem;
-                        width: 54%;
-                        z-index: 2;
-                        width: 18rem;
-                    }
-                    .banner6 {
-                        position: absolute;
-                        top: -15rem;
-                        left: 0;
-                        z-index: 1;
-                        width: 24rem;
-                    }
-                    .icon4 {
-                        position: absolute;
-                        top: -19rem;
-                        left: -2rem;
-                        width: 24rem;
-                    }
-                }
-
-                .business-text {
-                    img {
-                        width: 2rem;
-                    }
-
-                    p {
-                        font-size: 1.6rem;
-                    }
-
-                    .name {
-                        font-size: 1.3rem;
-                    }
-                }
-            }
-
-            .business-down {
-                img {
-                    display: block;
-                    width: 9rem !important;
-                    padding: 1rem;
-                }
-            }
-            .business-center {
-                h3 {
-                    font-size: 5rem;
-                    padding: 0 3rem !important;
-                }
-
-                p {
-                    font-size: 2rem;
-                    padding-left: 3rem !important;
-                }
-            }
-        }
-    }
-
-    @media (max-width: 739px) {
-        .business {
-            margin-bottom: 8rem !important;
         }
     }
 
@@ -627,6 +504,7 @@ body {
                 width: 18rem;
                 bottom: -23rem;
                 right: 5rem;
+                z-index: 1;
             }
             .icon10 {
                 width: 13rem;
@@ -680,6 +558,10 @@ body {
                 padding: 1.2rem 0 0 3rem;
             }
 
+            ul {
+                padding-left: 0;
+            }
+
             li {
                 padding: 2rem 0 0 3rem;
             }
@@ -698,6 +580,9 @@ body {
     footer {
         background-color: #252b36;
         position: relative;
+        .footer_content {
+            padding: 10rem 0 !important;
+        }
 
         .footer-left {
             p {
@@ -710,13 +595,13 @@ body {
         }
 
         .footer-right {
-            position: absolute;
-            top: -2.5rem;
-            right: 0;
             cursor: pointer;
             transition: all 0.7s ease-in-out;
-
+            
             img {
+                position: absolute;
+            right: 20%;
+            transform: translateY(-50%);
                 width: 5rem;
             }
 
@@ -725,21 +610,287 @@ body {
             }
         }
     }
+}
 
-    // @media (min-width: 768px) {
-    //     .main-card-item {
-    //         flex: 0 0 calc(33.33% - 20px);
-    //         margin-right: 20px;
-    //     }
+@media only screen and (max-width: 1024px) {
+    .banner {
+        p {
+            padding-bottom: 0 !important;
+        }
+    }
+    .banner-title {
+        left: 6rem;
+    }
 
-    //     .main-card-item:last-child {
-    //         margin-right: 0;
-    //     }
-    // }
+    .banner-title h2 {
+        font-size: 3rem !important;
+        letter-spacing: 2px;
+    }
 
-    // @media (min-width: 992px) {
-    //     .main-card-item {
-    //         flex: 0 0 calc(25% - 20px);
-    //     }
-    // }
+    .business-img {
+
+                .banner5 {
+                    position: absolute;
+                    top: -8.6rem !important;
+                    left: 8rem !important;
+                    width: 54% !important;
+                    z-index: 2;
+                }
+        }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header-bg {
+            height: 60rem;
+        }
+    .banner {
+        
+        p {
+            padding-bottom: 0 !important;
+            font-size: 2.4rem !important;
+        }
+    }
+
+    .banner-title h2 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+
+    .business-img {
+
+                .banner5 {
+                    position: absolute;
+                    top: -6.5rem !important;
+                    left: 7rem !important;
+                    width: 54% !important;
+                    z-index: 2;
+                }
+        }
+}
+
+@media only screen and (max-width: 767.5px) {
+    #home_3 {
+        .header {
+            max-height: 60rem;
+        }
+        .header-bg {
+            height: 50rem;
+        }
+
+        .banner {
+            min-height: 20rem;
+            max-height: 30rem;
+            // margin: 1rem 0;
+
+            p {
+                padding-bottom: 0 !important;
+                font-size: inherit !important;
+            }
+        }
+
+        .banner-title {
+            left: 3rem;
+            margin-bottom: 4rem;
+
+            h2 {
+                font-size: 2.5rem !important;
+                letter-spacing: 0.5px;
+            }
+
+            button {
+                width: 15rem !important;
+            }
+
+            p {
+                font-size: 1.8rem !important;
+            }
+        }
+
+        .img-fluid {
+            width: 100%;
+        }
+
+        .main-pay {
+            .row {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            .pay-title {
+                margin: 5rem 0;
+
+                h2 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .main-card {
+            padding: 0 2rem;
+            .banner_3 {
+                width: 40%;
+            }
+
+            .main-card-title {
+                // z-index: 1000;
+                margin-top: 15px;
+                h2 {
+                    padding: 0 50px;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        .worldwide {
+            .row {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            .pay-title {
+                margin: 5rem 0;
+
+                h2 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .touch {
+            .touch-main {
+                top: -10%;
+                margin: 0;
+                padding: 1rem 0;
+            }
+
+            .touch-img img {
+                border-radius: 0;
+                height: 15rem;
+            }
+
+            .touch-text {
+                text-align: center;
+
+                img {
+                    width: 3rem;
+                    margin-top: 1rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    margin: 1rem 0;
+                }
+            }
+        }
+
+        .touch-main {
+            .touch-img {
+                margin: 0 3rem;
+            }
+        }
+        
+        .contact {
+            .contact-form {
+            flex-wrap: wrap;
+            input {
+                margin-bottom: 1.5rem;
+            }
+        }
+        .contact-icon {
+            .icon7 {
+                top: -10rem;
+            }
+        }
+        }
+        // .business {
+        //     margin-bottom: 8rem !important;
+        // }
+
+        .business-main {
+            top: -80rem !important;
+        }
+        .business-up {
+            margin-bottom: 3rem;
+            .row {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .business-img {
+                position: relative;
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+
+                .banner5 {
+                    top: -5.7rem !important;
+                    left: 6rem !important;
+                    width: 17rem !important;
+                }
+                .banner6 {
+                    position: absolute;
+                    top: -15rem;
+                    left: 0;
+                    z-index: 1;
+                    width: 24rem;
+                    width: 25rem !important;
+                }
+                .icon4 {
+                    position: absolute;
+                    top: -19rem;
+                    left: -2rem;
+                    width: 24rem;
+                    width: 45% !important;
+                }
+            }
+
+            .business-text {
+                img {
+                    width: 2rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+                .name {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .business-down {
+            img {
+                display: block;
+                width: 9rem !important;
+                padding: 1rem;
+            }
+        }
+        .business-center {
+            h3 {
+                font-size: 6.5rem !important;
+                padding: 0 !important;
+                margin-right: 1.5rem;
+            }
+
+            p {
+                font-size: 1.6rem !important;
+                padding-left: 0 !important;
+                margin-left: 0 !important;
+            }
+        }
+
+        .footer-right {
+            position: absolute;
+            img {
+                right: 5% !important;
+            }
+        }
+    }
 }
