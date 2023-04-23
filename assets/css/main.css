@@ -86,7 +86,7 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 9999;
   background-color: #7552e5;
   -webkit-box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
           box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
@@ -102,11 +102,24 @@ body {
           align-items: center;
   padding: 1rem 3rem;
 }
-#home-2 .header .header__logo h1 {
+#home-2 .header .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+#home-2 .header .header__logo span {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: bold;
   color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 #home-2 .header .header__menu {
   display: -webkit-box;
