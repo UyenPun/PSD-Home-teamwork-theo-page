@@ -86,7 +86,7 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 9999;
   background-color: #7552e5;
   -webkit-box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
           box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
@@ -102,11 +102,24 @@ body {
           align-items: center;
   padding: 1rem 3rem;
 }
-#home-2 .header .header__logo h1 {
+#home-2 .header .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+#home-2 .header .header__logo span {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: bold;
   color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 #home-2 .header .header__menu {
   display: -webkit-box;
@@ -1239,17 +1252,20 @@ body {
   background-color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
-  margin-bottom: 5rem;
 }
 #home_3 .header .header-bg {
   width: 100%;
   position: absolute;
   top: 5rem;
   z-index: 0;
+  height: 80%;
 }
 #home_3 .container {
   padding: 0 !important;
   margin: 0 !important;
+}
+#home_3 .container-fluid {
+  padding-left: 0 !important;
 }
 #home_3 .row {
   --bs-gutter-x: 0 !important;
@@ -1265,17 +1281,21 @@ body {
   padding: 1rem 0;
 }
 #home_3 .navbar .navbar-brand {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 2.5rem;
 }
 #home_3 .navbar .navbar-brand img {
   margin-right: 1.5rem;
 }
 #home_3 .navbar .navbar-brand span {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   font-size: 2rem;
   line-height: 1.5;
   font-weight: bold;
@@ -1285,9 +1305,6 @@ body {
   padding: 5px 10px;
   font-weight: bold;
   color: #fff;
-}
-#home_3 .navbar .navbar-nav a.active {
-  color: #d8d8d8 !important;
 }
 #home_3 .navbar .navbar-nav a:hover {
   color: #d8d8d8 !important;
@@ -1306,6 +1323,7 @@ body {
 #home_3 .banner .banner-title {
   color: #fff;
   line-height: 1.5;
+  padding-left: 2.5rem;
 }
 #home_3 .banner .banner-title h2 {
   font-size: 5rem;
@@ -1333,10 +1351,11 @@ body {
 #home_3 .main-pay,
 #home_3 .worldwide {
   margin-bottom: 3rem;
+  margin-left: 2.5rem;
 }
 #home_3 .main-pay .pay-img,
 #home_3 .worldwide .pay-img {
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 0;
 }
 #home_3 .main-pay .pay-img img,
 #home_3 .worldwide .pay-img img {
@@ -1344,7 +1363,6 @@ body {
 }
 #home_3 .main-pay .pay-title,
 #home_3 .worldwide .pay-title {
-  padding: 0 3rem;
   text-align: start;
 }
 #home_3 .main-pay .pay-title h2,
@@ -1413,8 +1431,8 @@ body {
 #home_3 .main-card .card {
   border: none;
   cursor: pointer;
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 #home_3 .main-card .card:hover {
   background-color: #495be7;
@@ -1860,7 +1878,10 @@ body {
     font-size: 1.6rem;
   }
   #home_3 .main-card {
-    padding: 0 2rem;
+    padding: 0;
+  }
+  #home_3 .main-card .card-content {
+    margin-left: 2.5rem;
   }
   #home_3 .main-card .banner_3 {
     width: 40%;
@@ -1885,7 +1906,7 @@ body {
             align-items: center;
   }
   #home_3 .worldwide .pay-title {
-    margin: 5rem 0;
+    margin: 5rem 0 0 0;
   }
   #home_3 .worldwide .pay-title h2 {
     font-size: 2.5rem;
@@ -1900,7 +1921,7 @@ body {
   }
   #home_3 .touch .touch-img img {
     border-radius: 0;
-    height: 15rem;
+    aspect-ratio: 16/9;
   }
   #home_3 .touch .touch-text {
     text-align: center;

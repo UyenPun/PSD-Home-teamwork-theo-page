@@ -11,7 +11,6 @@ body {
         height: 90rem;
         background-color: #fff;
         box-shadow: none;
-        margin-bottom: 5rem;
         // background-image: url('../../img/page3/banner.png');
         .header-bg {
             width: 100%;
@@ -19,6 +18,7 @@ body {
             top: 5rem;
             // height: auto;
             z-index: 0;
+            height: 80%;
         }
 
         // @media screen and (min-width: 739px) {
@@ -33,9 +33,9 @@ body {
         margin: 0 !important;
     }
 
-    // .container-fluid {
-    //     padding-left: 0 !important;
-    // }
+    .container-fluid {
+        padding-left: 0 !important;
+    }
 
     .row {
         --bs-gutter-x: 0 !important;
@@ -51,16 +51,15 @@ body {
         padding: 1rem 0;
 
         .navbar-brand {
-            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-left: 2.5rem;
 
             img {
                 margin-right: 1.5rem;
             }
             span {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
                 font-size: 2rem;
                 line-height: 1.5;
                 font-weight: bold;
@@ -75,9 +74,9 @@ body {
                 color: #fff;
             }
 
-            a.active {
-                color: #d8d8d8 !important;
-            }
+            // a.active {
+            //     color: #d8d8d8 !important;
+            // }
 
             a:hover {
                 color: #d8d8d8 !important;
@@ -99,6 +98,8 @@ body {
         .banner-title {
             color: #fff;
             line-height: 1.5;
+            // margin-left: 2.5rem;
+            padding-left: 2.5rem;
 
             h2 {
                 font-size: 5rem;
@@ -127,20 +128,24 @@ body {
                 }
             }
         }
+
+        // .bannner-img {
+        // }
     }
 
     .main-pay,
     .worldwide {
         margin-bottom: 3rem;
+        margin-left: 2.5rem;
 
         .pay-img {
-            padding: 1.5rem 3rem;
+            padding: 1.5rem 0;
             img {
                 width: 100%;
             }
         }
         .pay-title {
-            padding: 0 3rem;
+            // padding: 0 3rem;
             text-align: start;
 
             h2 {
@@ -215,7 +220,7 @@ body {
         .card {
             border: none;
             cursor: pointer;
-            transition: all 0.7s ease-in-out;
+            transition: all 0.25s ease-in-out;
         }
 
         .card:hover {
@@ -730,7 +735,11 @@ body {
         }
 
         .main-card {
-            padding: 0 2rem;
+            padding: 0;
+
+            .card-content {
+                margin-left: 2.5rem;
+            }
             .banner_3 {
                 width: 40%;
             }
@@ -752,7 +761,7 @@ body {
                 align-items: center;
             }
             .pay-title {
-                margin: 5rem 0;
+                margin: 5rem 0 0 0;
 
                 h2 {
                     font-size: 2.5rem;
@@ -773,7 +782,7 @@ body {
 
             .touch-img img {
                 border-radius: 0;
-                height: 15rem;
+                aspect-ratio: 16 / 9;
             }
 
             .touch-text {
