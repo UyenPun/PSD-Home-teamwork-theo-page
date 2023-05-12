@@ -48,8 +48,6 @@ ul {
 
 #home-5 {
   background-color: #f3f6fa;
-  .container {
-  }
   .header {
     z-index: 1000;
     position: fixed;
@@ -81,7 +79,7 @@ ul {
     }
     #check:checked ~ .header-menu {
       transform: scale(1, 1);
-  }
+    }
     i {
       cursor: pointer;
       padding: 1rem;
@@ -374,7 +372,7 @@ ul {
 
   .team {
     margin-top: 4rem;
-    padding-bottom: 8rem;
+    padding-bottom: 35rem;
     &-intro {
       display: flex;
       flex-direction: column;
@@ -402,8 +400,48 @@ ul {
     }
   }
 
+  .email-box {
+    position: relative;
+    z-index: 23;
+    .container {
+      padding: 10rem 0;
+      position: absolute;
+      bottom: -20rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--linear-orange);
+      border-radius: 1rem;
+    }
+    h2 {
+      font-weight: bold;
+      color: white;
+      font-size: 6rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1.8rem;
+      color: white;
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .input-field {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      gap: 2rem;
+
+      input {
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        border-color: white;
+        padding-right: 15rem;
+      }
+    }
+  }
+
   // footer
   .footer-section {
+    padding-top: 25rem;
     background: #282f3a;
     position: relative;
     .footer-content {
@@ -504,7 +542,7 @@ ul {
       width: 100%;
       transform: scale(1, 0);
       transition: all 0.3s;
-      
+
       li {
         line-height: 4rem;
         width: 100vw;
@@ -525,7 +563,6 @@ ul {
     .nav {
       line-height: 10rem;
     }
-    
 
     .banner {
       &-background {
@@ -562,6 +599,45 @@ ul {
         text-align: center;
         font-size: 1.6rem;
       }
+    }
+
+    .plan {
+      h2 {
+        font-size: 2.6rem;
+        margin: 0 1.5rem;
+
+      }
+      p {
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 0 1.5rem;
+
+      }
+    }
+
+    .email-box {
+      .container {
+        width: 100%;
+        padding: 3rem 1rem;
+      }
+      h2 {
+        font-size: 2.6rem;
+      }
+      p {
+        font-size: 1.6rem;
+      }
+      .input-field {
+        flex-direction: column;
+      }
+      input {
+        width: 100%;
+      }
+    }
+    .team {
+      padding-bottom: 15rem;
+    }
+    .footer-section {
+      padding-top: 15rem;
     }
   }
   /* Tablet: width >= 740px and width < 1024px */
@@ -703,6 +779,26 @@ ul {
         width: 100%;
       }
     }
+    .plan {
+
+      &-btn {
+        margin-top: 2rem;
+      }
+      .btn-page {
+        padding: 1rem 1.5rem;
+      }
+      .btn-page:last-child {
+        &::after {
+          top: -33%;
+          right: -86%;
+        }
+      }
+    }
+    .team {
+      padding-bottom: 15rem;
+    }
+    .footer-section {
+      padding-top: 15rem;
+    }
   }
 }
-

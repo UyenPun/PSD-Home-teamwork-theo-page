@@ -3076,7 +3076,7 @@ ul {
 }
 #home-5 .team {
   margin-top: 4rem;
-  padding-bottom: 8rem;
+  padding-bottom: 35rem;
 }
 #home-5 .team-intro {
   display: -webkit-box;
@@ -3108,7 +3108,51 @@ ul {
   color: var(--p-clr);
   font-size: 1.8rem;
 }
+#home-5 .email-box {
+  position: relative;
+  z-index: 23;
+}
+#home-5 .email-box .container {
+  padding: 10rem 0;
+  position: absolute;
+  bottom: -20rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: var(--linear-orange);
+  border-radius: 1rem;
+}
+#home-5 .email-box h2 {
+  font-weight: bold;
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+}
+#home-5 .email-box p {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  margin: 3rem 0;
+}
+#home-5 .email-box .input-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  gap: 2rem;
+}
+#home-5 .email-box .input-field input {
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  border-color: white;
+  padding-right: 15rem;
+}
 #home-5 .footer-section {
+  padding-top: 25rem;
   background: #282f3a;
   position: relative;
 }
@@ -3261,6 +3305,40 @@ ul {
     text-align: center;
     font-size: 1.6rem;
   }
+  #home-5 .plan h2 {
+    font-size: 2.6rem;
+    margin: 0 1.5rem;
+  }
+  #home-5 .plan p {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0 1.5rem;
+  }
+  #home-5 .email-box .container {
+    width: 100%;
+    padding: 3rem 1rem;
+  }
+  #home-5 .email-box h2 {
+    font-size: 2.6rem;
+  }
+  #home-5 .email-box p {
+    font-size: 1.6rem;
+  }
+  #home-5 .email-box .input-field {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #home-5 .email-box input {
+    width: 100%;
+  }
+  #home-5 .team {
+    padding-bottom: 15rem;
+  }
+  #home-5 .footer-section {
+    padding-top: 15rem;
+  }
 }
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
   #home-5 .banner-background {
@@ -3376,5 +3454,21 @@ ul {
   }
   #home-5 .search-strategy button {
     width: 100%;
+  }
+  #home-5 .plan-btn {
+    margin-top: 2rem;
+  }
+  #home-5 .plan .btn-page {
+    padding: 1rem 1.5rem;
+  }
+  #home-5 .plan .btn-page:last-child::after {
+    top: -33%;
+    right: -86%;
+  }
+  #home-5 .team {
+    padding-bottom: 15rem;
+  }
+  #home-5 .footer-section {
+    padding-top: 15rem;
   }
 }
