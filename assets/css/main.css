@@ -118,7 +118,7 @@ header {
       -ms-user-select: none;
           user-select: none;
 }
-.header .header__menu {
+.header .header__menus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +131,7 @@ header {
           align-items: center;
   list-style: none;
 }
-.header .header__menu a {
+.header .header__menus a {
   display: block;
   color: #fff;
   padding: 7px 15px;
@@ -142,7 +142,7 @@ header {
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
-.header .header__menu a:hover {
+.header .header__menus a:hover {
   opacity: 0.6;
 }
 .header .header__list {
@@ -162,20 +162,20 @@ header {
   display: none;
 }
 
-#menu-toggle:checked ~ .header__menu {
+#menu-toggle:checked ~ .header__menus {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
 
-ul.header__menu li a span {
+ul.header__menus li a span {
   padding-right: 1rem;
 }
 
-ul.header__menu li a {
+ul.header__menus li a {
   position: relative;
 }
 
-ul.header__menu li a i {
+ul.header__menus li a i {
   position: absolute;
   top: 50%;
   right: 0;
@@ -183,8 +183,54 @@ ul.header__menu li a i {
           transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 63.9375em) {
-  .header__menu {
+.banner {
+  position: relative;
+}
+.banner__img {
+  width: 100%;
+  height: 96.4rem;
+  margin-left: -30rem;
+}
+.banner__text {
+  position: absolute;
+  top: 14%;
+  left: 13%;
+}
+.banner .banner__text p:first-of-type {
+  color: white;
+  font-size: 6rem;
+  font-weight: 200;
+}
+.banner .banner__text p:nth-child(2) {
+  color: white;
+  font-size: 6rem;
+  font-weight: 200;
+}
+.banner .bold-text {
+  font-weight: bold;
+}
+.banner .banner__text1 {
+  margin-bottom: -2.2rem;
+}
+.banner .banner__desc {
+  margin-bottom: 4.2rem;
+}
+.banner .btn__custom {
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  color: white;
+  background-color: #2d63d1;
+}
+
+.banner__desc {
+  max-width: 37rem;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .header__menus {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -208,11 +254,88 @@ ul.header__menu li a i {
     background-image: -webkit-gradient(linear, left top, right top, from(#ffad3a), to(#f6808b));
     background-image: linear-gradient(to right, #ffad3a, #f6808b);
   }
-  .header__menu a {
+  .header__menus a {
     margin-left: 12px;
   }
-  .header__menu li {
+  .header__menus li {
     margin-bottom: 10px;
+  }
+  .banner__img {
+    width: 140%;
+    height: 100%;
+    background-position: right;
+  }
+  .banner .banner__text p:first-of-type {
+    margin-bottom: -4px;
+  }
+  .banner .banner__desc {
+    font-size: 1.3rem !important;
+  }
+  .banner .btn__custom {
+    padding: 0.8rem 1.4rem;
+    border-radius: 0.6rem;
+    color: #fff;
+    background-color: #2d63d1;
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 46.1875em) {
+  .header__menus {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ffad3a), to(#f6808b));
+    background-image: linear-gradient(to right, #ffad3a, #f6808b);
+  }
+  .header__menus a {
+    margin-left: 12px;
+  }
+  .header__menus li {
+    margin-bottom: 10px;
+  }
+  .banner__img {
+    width: 180%;
+    height: 100%;
+    background-position: right;
+  }
+  .banner .banner__text {
+    position: absolute;
+    top: -14%;
+    left: 3%;
+  }
+  .banner .banner__text p:first-of-type {
+    margin-bottom: -2px;
+    font-size: 2rem !important;
+  }
+  .banner .banner__text p:nth-child(2) {
+    font-size: 2rem !important;
+  }
+  .banner .banner__desc {
+    font-size: 1.3rem !important;
+  }
+  .banner .btn__custom {
+    padding: 0.6rem 1rem;
+    border-radius: 0.6rem;
+    color: #fff;
+    background-color: #2d63d1;
+    font-size: 1.2rem;
   }
 }
 * {
