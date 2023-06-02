@@ -71,6 +71,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.home__1 {
+  width: 100%;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -184,6 +188,7 @@ ul.header__menus li a i {
 }
 
 .banner {
+  margin-bottom: 2rem;
   position: relative;
 }
 .banner__img {
@@ -227,6 +232,52 @@ ul.header__menus li a i {
   color: #fff;
   font-size: 1.8rem;
   margin-top: 3rem;
+}
+
+.offer {
+  display: block;
+  width: 100%;
+  height: 70rem;
+  background-color: #fff;
+}
+.offer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.offer__box--left {
+  width: 50%;
+  margin-left: 20rem;
+  margin-top: 20rem;
+}
+.offer__box--title h1 {
+  max-width: 50%;
+  margin-bottom: 5.5rem;
+}
+.offer__box--desc {
+  max-width: 68%;
+  margin-bottom: 7rem;
+}
+.offer__box--btn a {
+  color: #fff;
+  border-radius: 4px;
+  padding: 1.5rem 4rem;
+  background-color: #2d63d1;
+}
+.offer__box--right {
+  width: 50%;
+  margin-top: 12rem;
+}
+.offer__box--right img {
+  width: 80%;
+  height: 100%;
 }
 
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {

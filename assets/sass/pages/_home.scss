@@ -20,6 +20,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 //---------------------- HOME 1:----------------------//
+.home__1 {
+  width: 100%;
+}
 // HEADER
 header {
   position: sticky;
@@ -108,6 +111,7 @@ ul.header__menus li a i {
 
 // BANNER:
 .banner {
+  margin-bottom: 2rem;
   position: relative;
   &__img {
     width: 100%;
@@ -158,6 +162,53 @@ ul.header__menus li a i {
   color: #fff;
   font-size: 1.8rem;
   margin-top: 3rem;
+}
+
+// Offer Multiple:
+.offer {
+  display: block;
+  width: 100%;
+  height: 70rem;
+  // background-color: #ccc;
+  background-color: #fff;
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    // left
+    &--left {
+      width: 50%;
+      margin-left: 20rem;
+      margin-top: 20rem;
+    }
+    &--title {
+      h1 {
+        max-width: 50%;
+        margin-bottom: 5.5rem;
+      }
+    }
+    &--desc {
+      max-width: 68%;
+      margin-bottom: 7rem;
+    }
+    &--btn a {
+      color: #fff;
+      border-radius: 4px;
+      padding: 1.5rem 4rem;
+      background-color: #2d63d1;
+    }
+
+    //right:
+    &--right {
+      width: 50%;
+      margin-top: 12rem;
+      img {
+        width: 80%;
+        height: 100%;
+      }
+    }
+  }
 }
 // Responsive
 
